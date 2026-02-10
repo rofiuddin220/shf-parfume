@@ -223,6 +223,11 @@ body {
   background: #fff; #111;
 }
 
+ .whatsapp {
+  background-color: #25D366;
+  color: #fff;
+} 
+
 .more {
   color: #777;
   font-size: 18px;
