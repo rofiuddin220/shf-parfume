@@ -26,6 +26,13 @@
     <h1>SHF Parfume</h1>
     <p class="subtitle">Scent That Speaks Before You Do</p>
     
+   <div class="video-container">
+  <video autoplay loop muted playsinline poster="img/thumbnail-video.jpg">
+    <source src="video/mine_video.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video.
+  </video>
+</div>
+
     <!-- CTA UTAMA -->
     <div class="cta-main">
       <p class="cta-title">✨ Best Seller SHF Parfume</p>
@@ -66,61 +73,125 @@
     
 <!--link card-->
   <h2 class="market-title">Silahkan kunjungi</h2>
-   <div id="marketplace">
+
+<div id="marketplace">
+
+  <!-- TIKTOK -->
+  <div class="link-wrapper">
     <a class="link"
-    href="https://www.tiktok.com/@shf.parfume?_r=1&_t=ZS-93m8mwnRgUm"
-    target="_blank"
-    rel="noopener">
+      href="https://www.tiktok.com/@shf.parfume"
+      target="_blank"
+      rel="noopener">
+
       <div class="link-left">
         <div class="icon tiktok">
-          <img src="img/tiktok-logo.png" alt="logo TikTok">
+          <img src="img/tiktok-logo.png" alt="TikTok">
         </div>
-        <span>SHF Parfums Official TikTok Shop</span>
+
+        <div class="text">
+          <span class="title">SHF Parfums Official TikTok Shop</span>
+          <span class="username">@shf.parfume</span>
+        </div>
       </div>
-      <span class="more">⋮</span>
     </a>
 
-    <a class="link"
-    href="https://shopee.co.id/shaffy_galery"
-    target="_blank"
-    rel="noopener">
-      <div class="link-left">
-        <div class="icon shopee">
-          <img src="img/Logo_shoppe.png" alt="logo shoppe">
-        </div>
-        <span>SHF Parfums Official Shopee</span>
+    <div class="menu-wrapper">
+      <div class="dots">⋮</div>
+      <div class="dropdown">
+        <div onclick="copyText('shf.parfume')">Copy Username</div>
+        <div onclick="copyText('https://www.tiktok.com/@shf.parfume')">Copy Link</div>
       </div>
-      <span class="more">⋮</span>
-    </a>
-   </div>
-   
-    <a class="link"
-    href="https://instagram.com/shf_parfume_galerry/?"
-    target="_blank"
-    rel="noopener">
-      <div class="link-left">
-        <div class="icon instagram">
-          <img src="img/icon_instagram.png" alt="logo instagram">
-        </div>
-        <span>SHF Parfums Official Instagram</span>
-      </div>
-      <span class="more">⋮</span>
-    </a>
-
-     <a class="link" 
-   href="https://wa.me/6287796723402" 
-   target="_blank" 
-   rel="noopener">
-
-  <div class="link-left">
-    <div class="icon whatsapp">
-      <img src="img/icon-whatsapp.png" alt="logo WhatsApp">
     </div>
-    <span>Contac Us <b>•</b>  SHF parfume Official</span>
   </div>
 
-  <span class="more">⋮</span>
-</a>
+
+  <!-- SHOPEE -->
+  <div class="link-wrapper">
+    <a class="link"
+      href="https://shopee.co.id/shaffy_galery"
+      target="_blank"
+      rel="noopener">
+
+      <div class="link-left">
+        <div class="icon shopee">
+          <img src="img/Logo_shoppe.png" alt="Shopee">
+        </div>
+
+        <div class="text">
+          <span class="title">SHF Parfums Official Shopee</span>
+          <span class="username">shaffy_galery</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="menu-wrapper">
+      <div class="dots">⋮</div>
+      <div class="dropdown">
+        <div onclick="copyText('shaffy_galery')">Copy Username</div>
+        <div onclick="copyText('https://shopee.co.id/shaffy_galery')">Copy Link</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- INSTAGRAM -->
+  <div class="link-wrapper">
+    <a class="link"
+      href="https://instagram.com/shf_parfum_galerry"
+      target="_blank"
+      rel="noopener">
+
+      <div class="link-left">
+        <div class="icon instagram">
+          <img src="img/icon_instagram.png" alt="Instagram">
+        </div>
+
+        <div class="text">
+          <span class="title">SHF Parfums Official Instagram</span>
+          <span class="username">@shf_parfum_galerry</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="menu-wrapper">
+      <div class="dots">⋮</div>
+      <div class="dropdown">
+        <div onclick="copyText('shf_parfum_galerry')">Copy Username</div>
+        <div onclick="copyText('https://instagram.com/shf_parfum_galerry')">Copy Link</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- WHATSAPP -->
+  <div class="link-wrapper">
+    <a class="link"
+      href="https://wa.me/6287796723402"
+      target="_blank"
+      rel="noopener">
+
+      <div class="link-left">
+        <div class="icon whatsapp">
+          <img src="img/icon-whatsapp.png" alt="WhatsApp">
+        </div>
+
+        <div class="text">
+          <span class="title">Contact Us • SHF Parfume Official</span>
+          <span class="username">087796723402</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="menu-wrapper">
+      <div class="dots">⋮</div>
+      <div class="dropdown">
+        <div onclick="copyText('087796723402')">Copy Nomor</div>
+        <div onclick="copyText('https://wa.me/6287796723402')">Copy Link</div>
+      </div>
+    </div>
+  </div>
+
+</div>
     
     <!-- TRUST -->
     <div class="trust">
@@ -133,6 +204,33 @@
     </footer>
 
   </div>
+  <script>
+  // buka dropdown
+document.querySelectorAll('.dots').forEach(dots => {
+  dots.addEventListener('click', function (e) {
+    e.stopPropagation();
 
+    document.querySelectorAll('.dropdown').forEach(menu => {
+      menu.style.display = 'none';
+    });
+
+    this.nextElementSibling.style.display = 'block';
+  });
+});
+
+// klik luar nutup
+document.addEventListener('click', function () {
+  document.querySelectorAll('.dropdown').forEach(menu => {
+    menu.style.display = 'none';
+  });
+});
+
+// copy function universal
+function copyText(text) {
+  navigator.clipboard.writeText(text);
+  alert("Berhasil disalin ✅");
+}
+  </script>
+  
 </body>
 </html>
